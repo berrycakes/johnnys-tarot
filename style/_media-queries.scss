@@ -1,0 +1,163 @@
+//mobile-devices
+@media screen and (min-width: 300px) and (max-width: 480px) {
+    .parallax img {
+        perspective: 100px;
+        object-fit: cover;
+        width: 100%;
+        height: 100vh;
+        }
+    #title {
+        position: absolute;
+        width: 100%;
+    } 
+    .parallax h1 {
+        font-size: 50px;
+        text-align: center;
+        margin-top: 0;
+    }
+    #menu {
+        width: 100vw;
+    }
+
+    .parallax__cover #description {
+    grid-template-rows: 95% 5%;
+    grid-template-columns: 100%;
+    }
+    #quotes {
+        font-size: 40px;
+    }
+
+    #mandala {
+        opacity: 0.3;
+        transform: scale(0.8);
+        top:200px;
+        bottom:0;
+        left:50px;
+        right:0;
+    }
+    #highlight {
+        font-size: 60px;
+        font-family: $hand;
+        font-weight: 300;
+        color: $holo-lightblue;
+        line-height: 70%;
+    }
+
+    .section {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        text-align: left;
+        border-bottom: solid 1px $white;
+        grid-area: header;
+    }
+    .main-section {
+        height: 250vh;
+        // align-items: center;
+        display: grid;
+        grid-template-rows: 15% 1fr 1fr 1fr;
+        grid-template-columns: 100%;
+        grid-template-areas: 
+            "header";
+        background-color: $bg-color;
+    }
+    #shop-section {
+        height:300vh;
+        align-items: flex-start;
+        display: grid;
+        grid-template-rows: 10% 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 100%;
+        grid-template-areas: 
+            "header";
+        background-color: $bg-color;
+        gap: 0;
+
+    }
+    #reviews {
+        height:200vh;
+        width:100vw;
+        display: grid;
+        grid-template-rows: 20% 1fr 1fr 1fr;
+        grid-template-columns: 100%;
+        grid-template-areas: 
+            "header";
+        background-color: $bg-color;
+        gap: 0;
+        align-items: center;
+        justify-content: center;
+    }
+    #about {
+        height:150vh;
+        width: 100vw;
+        display: grid;
+        grid-template-rows: 1fr 1fr 2fr;
+        grid-template-columns: 100%;
+        grid-template-areas: 
+            "header";
+        background-color: $bg-color;
+        gap: 0;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .bio-description {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        align-self: flex-end;
+        justify-content: center;
+    
+    }
+    #bio-text {
+        width: 100%;
+        padding: 20px;
+        margin: 0;
+        text-align: justify;
+        font-size: 25px;
+        align-self: flex-start;
+    }
+    
+    #highlight-bio {
+        font-size: 50px;
+        font-family: $hand;
+        font-weight: 200;
+        color: $holo-lightblue;
+        line-height: 60%;
+    
+    }
+
+    .bio-img {
+        width: 250px;
+        height: 250px;
+        background-size: 250%;
+        background-position: -350px -10px;
+    }
+
+
+    #description {
+        height: 150vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    #book {
+        height: 90vh;
+        min-width: 360px;
+    }
+    #book-consultation {
+        filter: grayscale(30%) brightness(50%) opacity(50%);
+      }
+    .field {
+        width: 300px;
+    }
+
+    input, label {
+        width: 250px;
+    }
+
+    input[type=date] {
+        width: 250px;
+    }
+}
